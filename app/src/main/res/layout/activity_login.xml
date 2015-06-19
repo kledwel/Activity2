@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".login">
+
+  <LinearLayout
+      android:id="@+id/fields"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:text="@string/Username"
+              android:id="@+id/Username"
+              android:layout_weight="25"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"/>
+
+          <EditText
+              android:hint="@string/username_field"
+              android:id="@+id/username_field"
+              android:textSize="20dp"
+              android:layout_weight="75"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:text="@string/Password"
+              android:id="@+id/Password"
+              android:layout_weight="25"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"/>
+
+          <EditText
+              android:hint="@string/Password_field"
+              android:id="@+id/password_field"
+              android:textSize="20dp"
+              android:layout_weight="75"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:text="@string/Confirm"
+              android:id="@+id/confirmation"
+              android:layout_weight="25"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"/>
+
+          <EditText
+              android:hint="@string/Confirm_field"
+              android:id="@+id/confirm_field"
+              android:textSize="20dp"
+              android:layout_weight="75"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_below="@id/fields"
+        android:layout_alignRight="@id/fields"
+        android:text="@string/Submit"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
